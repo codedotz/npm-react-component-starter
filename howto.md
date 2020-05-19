@@ -4,9 +4,17 @@
 2. Initialize new repo by `git init`
 3. Setup git locally. (Optional `git config user.name "user-name-here"` for user and `git config user.email "user-email-here"` for email )
 
-alternatively
+alternatively use can run following command
 
-` git conf
+`git config --local -e`
+
+this will open ur default editor and write folling lines
+
+```txt
+[user]
+  name = "your github name"
+  emai = "user github email"
+```
 
 4. open package.json and change following attributes
 
@@ -33,7 +41,8 @@ alternatively
 7. Rename `sample.travis.yml` to `.traivs.yml`
 8. Install husky by `npm i -D husky`
 9. commit changes by running `git add .` then `git commit -m ""` (Make sure to add an empty message. This will trigger the commitizen cli and guide you through the git commit process)
-10. Finally push the project to newly created repo.
+10. Replace LICENSE file with yours
+11. Finally push the project to newly created repo.
 
 ```bash
 git remote add origin git@github.com:<yourGithubHandler>/<repo-name>.git
